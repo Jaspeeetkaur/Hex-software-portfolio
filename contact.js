@@ -13,7 +13,6 @@ document.querySelector("form").addEventListener("submit", function(e) {
     }
   
     let userArr = JSON.parse(localStorage.getItem("user")) || [];
-  
     let userDetail = {
       name: name,
       email: email,
@@ -26,5 +25,5 @@ document.querySelector("form").addEventListener("submit", function(e) {
     console.log("User data saved successfully");
     alert("Successfully submitted");
     document.querySelector("form").reset();
-  });
+  }); 
   
